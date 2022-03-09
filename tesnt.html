@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>윤성빈의 장례식</title>
+        
+    </head>
+    <body>
+        <hr>
+        <div id="pic">
+            <img src="file:///C:/Users/dhgus/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/ysb.jpg" width="200" height="200"/>
+        </div>
+        <hr>
+        <div id="txt">
+            <h2 id="dd">2010-10-06</h2>
+            <p id="yoon">윤성빈님이 사망하셨습니다</p>
+        </div>
+        <script>
+            var now = new Date();
+            var dead = new Date('2010-10-06');
+            if(dead>now) {
+                var element = document.getElementById("pic");
+                element.innerHTML = '<img src="file:///C:/Users/dhgus/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/aliveyoon.jpg" width="200" height="200"/>'
+                element = document.getElementById("txt");
+                element.innerHTML = '<h2 style="color: red">윤성빈은 살아있다</h2><p>{flg:ysb05_is_alive}</p>'
+            }     
+        </script>
+    </body>
+</html>
